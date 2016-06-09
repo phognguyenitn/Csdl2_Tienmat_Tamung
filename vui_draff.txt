@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 toi la ngoc
+=======
+toi la ngoc
+bài t?p nhóm
+>>>>>>> refs/remotes/origin/phong_draff
