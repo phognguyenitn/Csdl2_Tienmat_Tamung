@@ -1,6 +1,6 @@
 *       *********************************************************
 *       *                                                         
-*       * 06/07/16            MAIN_MENU.MPR             22:31:50  
+*       * 06/07/16            MAIN_MENU.MPR             21:25:06  
 *       *                                                         
 *       *********************************************************
 *       *                                                         
@@ -109,10 +109,10 @@ IF TYPE("m.lUniquePopups")="L" AND m.lUniquePopups
 		a_menupops[m.nTotPops]= SYS(2015)
 	ENDFOR
 ELSE
-	a_menupops[1]="hthèng"
+	a_menupops[1]="hth"
 	a_menupops[2]="danhmôc"
-	a_menupops[3]="chøngtõ"
-	a_menupops[4]="boco"
+	a_menupops[3]="chungtu"
+	a_menupops[4]="baocao"
 ENDIF
 
 
@@ -125,38 +125,38 @@ ENDIF
 
 DEFINE MENU (m.cMenuName) IN (m.oFormRef.Name) BAR
 
-DEFINE PAD _4nj1cahjk OF (m.cMenuName) PROMPT "Hª  thèng" COLOR SCHEME 3 ;
+DEFINE PAD _4nj19wnv5 OF (m.cMenuName) PROMPT "Hª  th«" COLOR SCHEME 3 ;
 	KEY ALT+H, ""
-DEFINE PAD _4nj1cahjl OF (m.cMenuName) PROMPT "Danh môc" COLOR SCHEME 3 ;
+DEFINE PAD _4nj19wnv6 OF (m.cMenuName) PROMPT "Danh môc" COLOR SCHEME 3 ;
 	KEY ALT+D, ""
-DEFINE PAD _4nj1cahjm OF (m.cMenuName) PROMPT "Chøng tõ" COLOR SCHEME 3 ;
+DEFINE PAD _4nj19wnv7 OF (m.cMenuName) PROMPT "Chung tu" COLOR SCHEME 3 ;
 	KEY ALT+C, ""
-DEFINE PAD _4nj1cahjn OF (m.cMenuName) PROMPT "B¸o c¸o" COLOR SCHEME 3 ;
+DEFINE PAD _4nj19wnv8 OF (m.cMenuName) PROMPT "Bao cao" COLOR SCHEME 3 ;
 	KEY ALT+B, ""
-DEFINE PAD _4nj1cahjo OF (m.cMenuName) PROMPT "Trî gióp" COLOR SCHEME 3 ;
+DEFINE PAD _4nj19wnv9 OF (m.cMenuName) PROMPT "Tro giup" COLOR SCHEME 3 ;
 	KEY ALT+T, ""
-ON PAD _4nj1cahjk OF (m.cMenuName) ACTIVATE POPUP (a_menupops[1])
-ON PAD _4nj1cahjl OF (m.cMenuName) ACTIVATE POPUP (a_menupops[2])
-ON PAD _4nj1cahjm OF (m.cMenuName) ACTIVATE POPUP (a_menupops[3])
-ON PAD _4nj1cahjn OF (m.cMenuName) ACTIVATE POPUP (a_menupops[4])
+ON PAD _4nj19wnv5 OF (m.cMenuName) ACTIVATE POPUP (a_menupops[1])
+ON PAD _4nj19wnv6 OF (m.cMenuName) ACTIVATE POPUP (a_menupops[2])
+ON PAD _4nj19wnv7 OF (m.cMenuName) ACTIVATE POPUP (a_menupops[3])
+ON PAD _4nj19wnv8 OF (m.cMenuName) ACTIVATE POPUP (a_menupops[4])
 
 DEFINE POPUP (a_menupops[1]) MARGIN RELATIVE SHADOW COLOR SCHEME 4
-DEFINE BAR 1 OF (a_menupops[1]) PROMPT "\<Ng­êi sö dông"
-DEFINE BAR 2 OF (a_menupops[1]) PROMPT "\<§¨ng xuÊt"
+DEFINE BAR 1 OF (a_menupops[1]) PROMPT "\<Nguoi su dung"
+DEFINE BAR 2 OF (a_menupops[1]) PROMPT "\<Dang xuat"
 
 DEFINE POPUP (a_menupops[2]) MARGIN RELATIVE SHADOW COLOR SCHEME 4
-DEFINE BAR 1 OF (a_menupops[2]) PROMPT "\<Danh môc tµi kho¶n"
-DEFINE BAR 2 OF (a_menupops[2]) PROMPT "\<Danh môc ®èi t­îng"
-DEFINE BAR 3 OF (a_menupops[2]) PROMPT "\<D­ ban ®Çu"
+DEFINE BAR 1 OF (a_menupops[2]) PROMPT "\<Danh muc tai khoan"
+DEFINE BAR 2 OF (a_menupops[2]) PROMPT "\<Danh muc doi tuong"
+DEFINE BAR 3 OF (a_menupops[2]) PROMPT "<\Du ban dau"
 
 DEFINE POPUP (a_menupops[3]) MARGIN RELATIVE SHADOW COLOR SCHEME 4
-DEFINE BAR 1 OF (a_menupops[3]) PROMPT "\<PhiÕu chi"
-DEFINE BAR 2 OF (a_menupops[3]) PROMPT "\<PhiÕu thu"
-DEFINE BAR 3 OF (a_menupops[3]) PROMPT "\<Chøng tõ kh¸c"
+DEFINE BAR 1 OF (a_menupops[3]) PROMPT "\<Phieu chi"
+DEFINE BAR 2 OF (a_menupops[3]) PROMPT "\<Phieu thu"
+DEFINE BAR 3 OF (a_menupops[3]) PROMPT "\<Chung tu khac"
 
 DEFINE POPUP (a_menupops[4]) MARGIN RELATIVE SHADOW COLOR SCHEME 4
-DEFINE BAR 1 OF (a_menupops[4]) PROMPT "\<Sæ quü"
-DEFINE BAR 2 OF (a_menupops[4]) PROMPT "\<B¸o c¸o thu chi"
+DEFINE BAR 1 OF (a_menupops[4]) PROMPT "\<So quy"
+DEFINE BAR 2 OF (a_menupops[4]) PROMPT "\<Bao cao thu chi"
 
 ACTIVATE MENU (m.cMenuName) NOWAIT
 
